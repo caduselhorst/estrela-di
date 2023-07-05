@@ -8,12 +8,14 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 public class Devolucao {
 
 	private String cgc;
@@ -34,11 +36,23 @@ public class Devolucao {
 	private Double vldesconto;
 	private String unidade;
 	
-	@Override
-	public String toString() {
-		return String.format("%s|%s|%d|%d|%d|%s|%d|%s|%d|%s|%d|%d|%d|%d|%d|%s|s%", cgc, cgcdist, codprod, codcli,
-				codusur, codfiscal, codplpag, getDataFormata(dtmov), numnota, serie, numseq, faturado, imposto,
-				qtdecx, qt, vldesconto, unidade);
+	public String toRegister() {
+		
+		return cgc + "|" +
+				cgcdist + "|" +
+				codprod + "|" +
+				codcli + "|" +
+				codusur + "|" +
+				codfiscal + "|" +
+				codplpag + "|" +
+				getDataFormata(dtmov) + "|" +
+				numnota + "|" +
+				serie + "|" + numseq + "|" + faturado + "|" + imposto + "|" + qtdecx + "|" + qt + "|" + vldesconto + "|" + unidade;
+				
+		
+//		return String.format("%s|%s|%d|%d|%d|%d|%d|%s|%d|%s|%d|%s|%s|%s|%d|%s|s%", cgc, cgcdist, codprod, codcli,
+//				codusur, codfiscal, codplpag, getDataFormata(dtmov), numnota, serie, numseq, faturado, imposto,
+//				qtdecx, qt, vldesconto, unidade);
 	}
 	
 	private String getDataFormata(Date data) {

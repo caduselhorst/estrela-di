@@ -89,13 +89,13 @@ public class LoadDataService {
 			    "CLI.FANTASIA, " +
 			    "CLI.DTCADASTRO, " +
 			    "CLI.CODATV1, " +
-			    "CLI.ENDERCOM, " +
+			    "CLI.ENDERENT, " +
 			    "CLI.NUMEROENT, " +
-			    "CLI.BAIRROCOM, " +
-			    "CLI.CEPCOM, " +
+			    "CLI.BAIRROENT, " +
+			    "CLI.CEPENT, " +
 			    "CLI.CODMUNICIPIO, " +
 			    "CLI.LIMCRED, " +
-			    "CLI.TELCOM, " +
+			    "CLI.TELENT, " +
 			    "CLI.EMAIL, " +
 			    "MAT.CGCENT as CONTATO " +
 			    "FROM " + getOwner() + "PCCLIENT CLI, " +
@@ -127,13 +127,13 @@ public class LoadDataService {
 				MetaDataModel.builder().columnName("fantasia").columnType("STRING").build(),
 				MetaDataModel.builder().columnName("dtcadastro").columnType("DATE").build(),
 				MetaDataModel.builder().columnName("codatv1").columnType("LONG").build(),
-				MetaDataModel.builder().columnName("endercom").columnType("STRING").build(),
+				MetaDataModel.builder().columnName("enderent").columnType("STRING").build(),
 				MetaDataModel.builder().columnName("numeroent").columnType("STRING").build(),
-				MetaDataModel.builder().columnName("bairrocom").columnType("STRING").build(),
-				MetaDataModel.builder().columnName("cepcom").columnType("STRING").build(),
+				MetaDataModel.builder().columnName("bairroent").columnType("STRING").build(),
+				MetaDataModel.builder().columnName("cepent").columnType("STRING").build(),
 				MetaDataModel.builder().columnName("codmunicipio").columnType("LONG").build(),
 				MetaDataModel.builder().columnName("limcred").columnType("STRING").build(),
-				MetaDataModel.builder().columnName("telcom").columnType("STRING").build(),
+				MetaDataModel.builder().columnName("telent").columnType("STRING").build(),
 				MetaDataModel.builder().columnName("email").columnType("STRING").build(),
 				MetaDataModel.builder().columnName("contato").columnType("STRING").build());
 		

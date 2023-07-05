@@ -27,13 +27,13 @@ public class Cliente {
 	private String fantasia;
 	private Date dtcadastro;
 	private Long codatv1;
-	private String endercom;
+	private String enderent;
 	private String numeroent;
-	private String bairrocom;
-	private String cepcom;
+	private String bairroent;
+	private String cepent;
 	private Long codmunicipio;
 	private Double limcred;
-	private String telcom;
+	private String telent;
 	private String email;
 	private String contato;
 	
@@ -41,8 +41,8 @@ public class Cliente {
 	public String toString() {
 		
 		return String.format("%s|%s|%s|%d|%s|%d|%s|%s|%s|%s|%d|%s|%s|%s|%s|%d|%s|%s|%s|%s", cgc, cgcdist, cgcmatriz, codcliprinc, cgcent,
-				codcli, cliente, rede, fantasia, new SimpleDateFormat("yyyy-MM-dd").format(dtcadastro), codatv1, endercom, numeroent, bairrocom,
-				cepcom, codmunicipio, limcred, telcom, email, contato);
+				codcli, cliente, rede, fantasia, new SimpleDateFormat("yyyy-MM-dd").format(dtcadastro), codatv1, enderent, numeroent, bairroent,
+				cepent, codmunicipio, limcred, telent, email, contato);
 		
 	}
 

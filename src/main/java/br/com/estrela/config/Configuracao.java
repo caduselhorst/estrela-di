@@ -17,5 +17,12 @@ public class Configuracao {
 	private String dataReferencia = "sysdate";
 	private String cnpjIndustria = "'16404287069864'";
 	private String ownerTabelas;
+	private boolean usaFtp = false;
+	private String  ftpHost;
+	private Integer ftpPort;
+	private String  ftpPath;
+	private String  ftpUsuario;
+	private String  ftpSenha;
+	private String  ftpHostsConhecidos;
 	
 }
